@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="38 -2 420 420" role="img" aria-label="Ariberry">
+  <defs>
+    <linearGradient id="ab-bag" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#5c2d80"/><stop offset="1" stop-color="#2e1248"/>
+    </linearGradient>
+    <linearGradient id="ab-swoosh" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5c2d80"/><stop offset="1" stop-color="#2e1248"/>
+    </linearGradient>
+    <radialGradient id="ab-berry" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#a873c6"/><stop offset="0.6" stop-color="#8f4fb0"/><stop offset="1" stop-color="#6c3290"/>
+    </radialGradient>
+  </defs>
+  <path d="M233 100V78a59 59 0 0 1 118 0v22" fill="none" stroke="#3a1858" stroke-width="23" stroke-linecap="round"/>
+  <path fill="url(#ab-bag)" d="M58 372 170 113q7-15 23-15h205q12 0 16 11l28 96c-22 0-46-2-67 10-21-38-58-62-110-62-38 0-62 26-71 55l-67 174q-5 13-18 13H72q-19 0-14-23Z"/>
+  <path fill="#3a1858" d="M283 160q4 23 17 27-13 4-17 27-4-23-17-27 13-4 17-27Z"/>
+  <path fill="url(#ab-swoosh)" d="M136 386c35-85 100-140 200-152l10 34c-80 4-150 45-210 118Z"/>
+  <path fill="#7c3fa2" d="M352 274c6-40 44-64 90-62-2 42-34 74-82 74Z"/>
+  <path d="M327 234q17 12 15 40" fill="none" stroke="#4a2368" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="333" cy="335" r="70" fill="url(#ab-berry)"/>
+  <ellipse cx="306" cy="302" rx="16" ry="10" fill="#c49ad8" opacity=".55" transform="rotate(-30 306 302)"/>
+</svg>

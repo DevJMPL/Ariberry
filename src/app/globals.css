@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* Paleta Ariberry, tomada del logo: morado de la bolsa, tinta uva, mora clara. */
+:root {
+  --paper: #f7f4f9;
+  --card: #ffffff;
+  --ink: #2b1240;
+  --muted: #6c5f78;
+  --line: #e7dfee;
+  --berry: #5c2d80;
+  --berry-deep: #34174f;
+  --berry-soft: #eee3f6;
+  --plum: #8f4fb0;
+  --leaf: #1f7a4d;
+  --leaf-deep: #165c3a;
+  --sun: #f4b63f;
+  --danger: #b42318;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-berry: var(--berry);
+  --color-berry-deep: var(--berry-deep);
+  --color-berry-soft: var(--berry-soft);
+  --color-leaf: var(--leaf);
+  --color-leaf-deep: var(--leaf-deep);
+  --color-sun: var(--sun);
+  --color-danger: var(--danger);
+  --color-plum: var(--plum);
+  --font-display: var(--font-outfit);
+  --font-sans: var(--font-figtree);
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-figtree), system-ui, sans-serif;
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--berry);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Etiqueta de precio con "ojillo", como las de bazar. */
+.price-tag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem 0.3rem 1.25rem;
+  background: var(--berry);
+  color: #fff;
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  border-radius: 4px 8px 8px 4px;
+  clip-path: polygon(0.6rem 0, 100% 0, 100% 100%, 0.6rem 100%, 0 50%);
+}
+.price-tag::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 50%;
+  width: 0.36rem;
+  height: 0.36rem;
+  margin-top: -0.18rem;
+  border-radius: 999px;
+  background: var(--paper);
+}
+.price-tag[data-soldout="true"] {
+  background: #8d8291;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
